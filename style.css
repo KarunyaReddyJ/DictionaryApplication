@@ -1,45 +1,63 @@
-#meaning{
-    width: 60%;
-    margin: auto;
+#meaning {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-radius: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
     opacity: 0;
-    box-shadow: 0px 0px 10px white;
+    transition: opacity 0.5s ease-in-out;
 }
-#meaning p{
+#meaning p {
     text-align: justify;
-    background-color: antiquewhite;
-    padding: 10px 20px;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
     border-radius: 10px;
+    margin: 10px 0;
 }
-input{
-    max-width: 500px;
-    width: 50vw;
-    display: block;
-    height: 100%;
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    transition: box-shadow 0.3s ease-in-out;
 }
-#top{
+input:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+#top {
     display: flex;
-    height: 5%;
-    width: fit-content;
-    margin:40px auto;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 10px;
+}
+button {
     padding: 10px 20px;
+    background-color: #20c997;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-button{
-    height:100%;
-    width: 10vw;
-    background-color: aquamarine;
-    font: 1em sans-serif;
-    box-shadow: 0px 0px 10px white;
-    border-radius: 30px;
+button:hover {
+    background-color: #17a2b8;
 }
-body{
-    background-color: rgba(0, 0, 0, 0.339);
-    height: 100vh;
+body {
+    background-color: #e7e3e33e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }
